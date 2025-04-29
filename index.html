@@ -13,7 +13,7 @@
  Biography
  Airforce
  Cybersecurity
- Skills 
+ Knowledge / Skills ( Platforms / frameworks maybe ) 
  Portfolio-->
 <body>
     <div class="top-section">
@@ -85,6 +85,14 @@
             <img  class="giacPin floating-img" src="static/images/Education/GCFA.png"/>
             <img  class="giacPin floating-img" src="static/images/Education/GCIH.png"/>
             
+         </div>
+         <div class="section-usaf">
+            <div>
+                <img id="afLogo" src="static/images/usaf/USAF.png">
+            </div>
+            <div>
+                <h3>As a member of the united states air force I am so much better than all other applicants because im awesome</h3>
+            </div>
          </div>
             <div class="section-c-header">
                 <h3>Geared Mountain</h3>
@@ -696,7 +704,9 @@ greet("World");</code></pre>
 
     
   }
+
   document.addEventListener("DOMContentLoaded", () => {
+  // GIAC Pins floating in from bottom sequentially
   const images = document.querySelectorAll('.floating-img');
 
   const observer = new IntersectionObserver((entries) => {
@@ -714,8 +724,20 @@ greet("World");</code></pre>
       }
     });
   }, { threshold: 0.5 });
-
   images.forEach(img => observer.observe(img));
+
+  // Air force logo floating in from right
+  const afLogo = document.getElementById('afLogo');
+  const afObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('float-left');
+            afObserver.unobserve(entry.target);
+        }
+    });
+  }, { threshold: 0.5 });
+
+  afObserver.observe(afLogo)
 });
 </script>
 </body>
