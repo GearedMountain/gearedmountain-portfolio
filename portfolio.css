@@ -6,6 +6,12 @@ html{
     font-family: monospace;
     height:auto;
 }
+
+a{
+    color:#5898ad;    
+    text-decoration: none;
+}
+
 .top-section{
     height:100vh;
     margin:0px;
@@ -353,7 +359,7 @@ main{
     width:100%;
     z-index:1;
     height:50vh;
-    bottom:-10px;
+   
     background-color:black;
     position: absolute;
     animation: moveBackground 20s linear infinite;
