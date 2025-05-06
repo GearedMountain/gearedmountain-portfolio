@@ -335,6 +335,7 @@ main{
 }
 
 .section-c{
+    
     padding-top:0vh;
     width:100%;
     height:360px;
@@ -344,6 +345,7 @@ main{
 }
 
 .section-c-header{
+    padding-top: 15vh;
     background-color: black;
     text-align: center;
 }
@@ -391,7 +393,9 @@ main{
     width:100%;
     height:auto;
     background-color:#0f1724;
- 
+    padding-bottom: 7.5vh;
+    padding-top: 7.5vh;
+
 }
 .section-d h3{
    
@@ -831,11 +835,10 @@ background-color: black;
 }
 
 .af-logo-wrapper{
-    
     position: relative;
     display: inline-block;
     height:auto;
-  }
+}
 
   #afLogo{
     display: block;
@@ -865,7 +868,6 @@ background-color: black;
     10% { font-size: 3rem;  }
     50% {  font-size: 3rem;  }
     60% {  font-size: 2rem;  }
-
     100% {  font-size: 2rem;  }
 }
 
@@ -886,17 +888,12 @@ background-color: black;
     margin-left:10vw;
     width:80vw;
     height:auto+50px;
-    
     display:flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
-    padding-top: 50px; 
+    padding-top: 50px;
   }
-
-  
-
-    
 
   .float-left {
     opacity: 0;
@@ -935,11 +932,27 @@ background-color: black;
 
 
 
+@media (max-width: 1200px) {
+
+    #tsLogo{
+        position: absolute;
+        top: 0;
+        left: 0w;
+        width: 10vw; /* Adjust size as needed */
+        height: auto;
+        opacity: 0;
+        transform: scale(3);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+	
+}
+
 @media (max-width: 1000px) {
+
     html{
         font-size:16px;
     }
-	
+
 	.name-and-jackpot-scroller{
 		
 		z-index: 5;
@@ -948,14 +961,26 @@ background-color: black;
 		align-items: center;
 		background: rgba(0,0,0,0);
 	}
+
 	.name-and-jackpot-scroller h1{
 		justify-content: center; /* Center horizontally */
 		align-items: center;	
 	}
 	
+    #tsLogo{
+        position: absolute;
+        top: 5vh;
+        left: 0w;
+        width: 12vw; /* Adjust size as needed */
+        height: auto;
+        opacity: 0;
+        transform: scale(3);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
 }
 
 @media (max-width: 700px) {
+
 	.section-a{
         width:100%;
         height:100%;
