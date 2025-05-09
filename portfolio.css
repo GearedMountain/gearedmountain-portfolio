@@ -359,7 +359,6 @@ main{
     width:100%;
     z-index:1;
     height:360px;
-   
     background-color:black;
     position: absolute;
     animation: moveBackground 20s linear infinite;
