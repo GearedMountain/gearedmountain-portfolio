@@ -376,9 +376,7 @@ main{
 .section-c h3{
     text-align: center;
     margin:0px;
-   
     width:100%;
-    
     font-size: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
