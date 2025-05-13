@@ -248,7 +248,7 @@ main{
 }
 /* FOR TERMINAL AT TOP */
 .editor {
-      max-width: 800px;
+      max-width: 60vw;
       margin: 2rem auto;
       
       border-radius: 6px;
