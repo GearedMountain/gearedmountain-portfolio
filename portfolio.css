@@ -116,6 +116,7 @@ a{
     width:100%;
     height:200vh;
 }
+
 /* Fancy intro background */
 .top-section h1{
     margin:0px;
@@ -247,6 +248,38 @@ main{
     padding-bottom:10vh;
 }
 
+/* FOR TERMINAL AT TOP */
+
+
+#siteTerminal {
+background: black;
+  white-space: pre;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  height:30vh;
+  text-shadow: 0 0 5px #36606e;
+  animation: flicker 2s infinite;
+}
+
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  49.9% { opacity: 0.98; }
+  50% { opacity: 0.9; }
+  50.1% { opacity: 1; }
+}
+
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 .section-a{
     
     width:100%;
