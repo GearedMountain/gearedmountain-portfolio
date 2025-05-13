@@ -239,29 +239,36 @@ main{
     background-color:#141F2D;
 }
 
-.content{
-    width:96%;
-    margin-left:2%;
-    height:auto;
-    padding-top: 10vh;
-    position:relative;
-    padding-bottom:10vh;
-}
 
+.content{
+    padding-left: 20vw;
+    padding-right: 20vw;
+
+    background-color: black;
+}
 /* FOR TERMINAL AT TOP */
 
 
-#siteTerminal {
-background: black;
-  white-space: pre;
+#terminal {
+  background: black;
+  white-space: pre-wrap;
   font-size: 1.2rem;
   line-height: 1.5;
-  height:30vh;
+  height:auto;
   text-shadow: 0 0 5px #36606e;
   animation: flicker 2s infinite;
+  width:100%;
+
 }
 
+.spacer {
+  height: 80vh;
+}
 
+.terminal-line {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
 @keyframes flicker {
   0%, 100% { opacity: 1; }
   49.9% { opacity: 0.98; }
