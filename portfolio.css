@@ -247,46 +247,53 @@ main{
     background-color: black;
 }
 /* FOR TERMINAL AT TOP */
+.editor {
+      max-width: 800px;
+      margin: 2rem auto;
+      
+      border-radius: 6px;
+      overflow: hidden;
+    }
 
+    .tabs {
+      display: flex;
+      background-color: #252526;
+      padding: 0.5rem;
+      
+    }
 
-#terminal {
-  background: black;
-  white-space: pre-wrap;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  height:auto;
-  text-shadow: 0 0 5px #36606e;
-  animation: flicker 2s infinite;
-  width:100%;
+    .tab {
+      margin-right: 1rem;
+      color: #ccc;
+      cursor: pointer;
+    }
 
-}
+    .tab.active {
+      color: #fff;
+      font-weight: bold;
+    }
 
-.spacer {
-  height: 80vh;
-}
+    .content {
+      padding: 1rem;
+      white-space: pre-wrap;
+      font-size: 1rem;
+    }
 
-.terminal-line {
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-}
-@keyframes flicker {
-  0%, 100% { opacity: 1; }
-  49.9% { opacity: 0.98; }
-  50% { opacity: 0.9; }
-  50.1% { opacity: 1; }
-}
+    .line-number {
+      display: inline-block;
+      width: 2rem;
+      color: #666;
+      user-select: none;
+    }
 
+    .code-line {
+      display: block;
+      line-height: 1.5;
+    }
 
-.cursor {
-  display: inline-block;
-  animation: blink 1s step-start infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
+    .comment { color: #6a9955; }
+    .label { color: #9cdcfe; }
+    .value { color: #ce9178; }
 .section-a{
     
     width:100%;
