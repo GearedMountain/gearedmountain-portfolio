@@ -116,6 +116,7 @@ a{
     width:100%;
     height:200vh;
 }
+
 /* Fancy intro background */
 .top-section h1{
     margin:0px;
@@ -238,15 +239,61 @@ main{
     background-color:#141F2D;
 }
 
-.content{
-    width:96%;
-    margin-left:2%;
-    height:auto;
-    padding-top: 10vh;
-    position:relative;
-    padding-bottom:10vh;
-}
 
+.content{
+    padding-left: 20vw;
+    padding-right: 20vw;
+
+    background-color: black;
+}
+/* FOR TERMINAL AT TOP */
+.editor {
+      max-width: 60vw;
+      margin: 2rem auto;
+      
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .tabs {
+      display: flex;
+      background-color: #252526;
+      padding: 0.5rem;
+      
+    }
+
+    .tab {
+      margin-right: 1rem;
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 1rem;
+      white-space: pre-wrap;
+      font-size: 1rem;
+    }
+
+    .line-number {
+      display: inline-block;
+      width: 2rem;
+      color: #666;
+      user-select: none;
+    }
+
+    .code-line {
+      display: block;
+      line-height: 1.5;
+    }
+
+    .comment { color: #6a9955; }
+    .label { color: #9cdcfe; }
+    .value { color: #ce9178; }
 .section-a{
     
     width:100%;
@@ -338,7 +385,7 @@ main{
     
     padding-top:0vh;
     width:100%;
-    height:360px;
+    height:350px;
     overflow:hidden;
     background-color:black;
     position: relative;
@@ -361,7 +408,6 @@ main{
     width:100%;
     z-index:1;
     height:360px;
-   
     background-color:black;
     position: absolute;
     animation: moveBackground 20s linear infinite;
@@ -379,9 +425,7 @@ main{
 .section-c h3{
     text-align: center;
     margin:0px;
-   
     width:100%;
-    
     font-size: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
@@ -398,7 +442,6 @@ main{
 
 }
 .section-d h3{
-   
     height:auto;
     margin:0px;
     text-align: center;
@@ -412,7 +455,6 @@ main{
     margin-bottom:5vh;
     width:20vw;
     height:auto;
-    
 }
 
 
@@ -500,11 +542,11 @@ main{
         
     }
     to {
-        
         opacity:100;
         filter:blur(0px);
     }
   }
+  
 .revealSkillLevel{
     animation: revealLevel .5s linear forwards;
 }
